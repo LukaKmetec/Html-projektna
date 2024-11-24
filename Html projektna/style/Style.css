@@ -1,0 +1,789 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    overflow: unset !important;
+    overflow-y: unset !important;
+}
+
+body{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+body.swal2-height-auto {
+    height: 100% !important;
+}
+
+h1{
+    margin: auto;
+}
+
+.zatemnitev{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+.headr{
+    height: 10%;
+    width: 100%;
+    margin: auto;
+}
+
+.vse{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.zaslon{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    margin: 30px 20px;
+    height: 80%;
+    width: 75%;
+}
+
+.glavni{
+    width: 23%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 10px 10px rgba(255, 255, 255, 0.2);
+}
+
+.glava{
+    text-align: left;
+    height:10%;
+    width: 100%;
+}
+
+.username{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.passwd{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.username_vnos{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    color: white;
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+.passwd_vnos{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    color: white;
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+::-ms-reveal{
+    filter: invert(100%);
+}
+
+label{
+    position: absolute;
+    width: 10%;
+    height: 2%;
+    color: lightgrey;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.label{
+    position: absolute;
+    margin-top: -2.3%;
+    margin-left: 10px;
+    transition: all 0.5s;
+    font-size: 16px;
+}
+
+.label1{
+    margin-top: 20px;
+    margin-left: -25%;
+    position: absolute;
+    font-size: 16px;
+    transition: all 0.5s;
+
+}
+
+.label2{
+    margin-top: -2.5%;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 16px;
+    transition: all .5s;
+}
+
+.username_vnos:focus + .label{
+    font-size: 12px;
+    margin-top: -3.5%;
+    transition: all 0.5s;
+}
+
+.passwd_vnos:focus + .label{
+    font-size: 12px;
+    margin-top: -3%;
+    transition: all 0.5s;
+}
+
+.username_vnos:required:valid + .label{
+    font-size: 12px;
+    margin-top: -3.5%; 
+}
+
+.passwd_vnos:required:valid + .label{
+    font-size: 12px;
+    margin-top: -3.5%; 
+}
+
+.mail_vnos:focus + .label2{
+    font-size: 12px;
+    margin-top: -4%;
+    transition: all 0.5s;
+}
+
+.mail_vnos:required:valid + .label2{
+    font-size: 12px;
+    margin-top: -4%;
+}
+
+.passwd_vnos1:focus + .label2{
+    font-size: 12px;
+    margin-top: -4%;
+    transition: all 0.5s;
+}
+
+.passwd_vnos1:required:valid + .label2{
+    font-size: 12px;
+    margin-top: -4%;
+}
+
+
+.gumb{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 7%;
+    color: white;
+}
+
+.red{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+.white{
+    background-color: rgba(65, 65, 65, 0.7);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.gumb_code{
+    margin-top: 20px;
+    width: 100%;
+    height: 7%;
+}
+
+.or{
+    text-align: center;
+    height: 4%;
+}
+
+.forg_pass{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.rememb_p{
+    font-size: 18px;
+    height: 80%;
+    vertical-align: top;
+}
+
+.rememb{
+    height: 70%;
+    width: 15%;
+    margin-top: 3px;
+    margin-bottom: 17px;
+    justify-content: left;
+    float: left;
+}
+
+.rememb1{
+    display: inline-block;
+    height: 70%;
+    width: 80%;
+    margin-left: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+.rememb2{
+    width: 100%;
+    height: 5%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.new{
+    height: 5%;
+    width: 38%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.sign{
+    display: inline-block;
+    width: 50%;
+    height: 5%;
+    font-weight: bold;
+    float: right;
+}
+
+.forma{
+    height: 100%;
+    width: 100%;
+}
+
+.zatemnitev1{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.glavni1{
+    background-image: url(../img/background.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.box1{
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    display: flexbox;
+}
+
+.headr1{
+    height: 20%;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: bold;
+    height: 35%;
+    margin-bottom: 10%;
+}
+
+.text_centr{
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2%;
+}
+
+.gumb1{
+    width: 4%;
+    height: 15%;
+    float: right;
+    margin-top: 25px;
+    margin-right: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.text{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 2%;
+}
+
+.text_majhn{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 4%;
+}
+
+.mail{
+    height: 10%;
+    width: 65%;
+    background-color: rgba(65, 65, 65, 0.7);
+    border: none;
+    border-radius: 6px;
+    margin-right: 5px;
+    padding: 0;
+    color: grey;
+    vertical-align: top;
+    font-size: 20px;
+}
+
+.mail:focus + .label1{
+    font-size: 12px;
+    margin-top: 0px;
+    margin-left: -25%;
+    transition: all 0.5s;
+}
+
+.mail:required:valid + .label1{
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.gumb_started{
+    height: 10%;
+    width: 32%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sans_serf{
+    font-family: sans-serif;
+}
+
+.glava1{
+    height: 10%;
+    width: 100%;
+    border-bottom: 3px solid lightgray;
+    margin-bottom: 50px;
+}
+
+.glavno{
+    height: 84%;
+    width: 100%;
+}
+
+.polje{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    display: flexbox;
+}
+
+.mail1{
+    height: 10%;
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 6px;
+}
+
+.passwd1{
+    height: 10%;
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 6px;
+}
+
+.mail_vnos{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
+.passwd_vnos1{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
+::-ms-reveal{
+    filter: invert(0%);
+}
+
+.naslov{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.forma1{
+    width: 100%;
+    height: 100%;
+}
+
+.p{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.p1{
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.netflix{
+    float: left;
+    background: transparent;
+    background-image: url(../img/netflix_trans.jpg);
+    height: 56px;
+    width: 182px;
+    background-repeat: no-repeat;
+}
+
+.special{
+    height: 5%;
+    width: 62%;
+    align-items: left;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.special_vnos{
+    width: 10%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.gumb_next{
+    height: 10%;
+    width: 100%;
+}
+
+.next{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.netflix_index{
+    height: 100%;
+    width: 30%;
+    background-image: url(../img/267310720015211.png);
+    background-repeat: no-repeat;
+    background-size: 200px 50px;
+    background-position: bottom;   
+}
+
+.p2{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 2%;
+}
+
+body{
+    min-width: 800px;
+    min-height: 600px;
+    overflow: auto;
+}
+@media screen and (max-width: 1100px) {
+    .label1{
+        margin-top: 1%;
+    }
+    h2{
+        margin-bottom: 60px;
+    }
+    .gumb1{
+        font-size: 7px;
+    }
+    .gumb_started{
+        font-size: 14px;
+    }
+    .glavni{
+        width: 30%;
+        height: 80%;
+    }
+    .label{
+        width: 30%;
+        margin-top: -3%;
+    }
+    .username_vnos:focus + .label{
+        font-size: 10px;
+        margin-top: -4%;
+    } 
+    .passwd_vnos:focus + .label{
+        font-size: 10px;
+        margin-top: -4%;
+    }
+    .label2{
+        width: 30%;
+        margin-top: -3%;
+    }
+    .mail_vnos{
+        font-size: 16px;
+    }
+    .passwd_vnos1{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .glavni{
+        width: 50% !important;
+        height: 89% !important;
+    }
+    .username{
+        height: 6%;
+    }
+    .passwd{
+        height: 6%;
+    }
+    .label{
+        width: 40%;
+    }
+    .username_vnos:focus + .label{
+        font-size: 8px;
+        margin-top: -3%;
+    }
+    .passwd_vnos:focus + .label{
+        font-size: 8px;
+        margin-top: -3%;
+    }
+    .label{
+        margin-top: -3%;
+    }
+    .label1{
+        width: 25%;
+        font-size: 14px;
+        margin-top: 1%;
+        margin-left: -240px;
+    }
+    .mail:focus + .label1{
+        padding-left: 10px;
+        margin-left: -250px;
+        font-size: 10px;
+    }
+    .label2{
+        margin-top: -3.7%;
+    }
+    .mail_vnos:focus + .label2{
+        margin-top: -4.7%;
+    }
+    .passwd_vnos1:focus + .label2{
+        margin-top: -4.7%;
+    }
+    .username_vnos:required:valid + .label{
+        font-size: 8px;
+        margin-top: -3%;
+    }
+    .passwd_vnos:required:valid + .label{
+        font-size: 8px;
+        margin-top: -3%;
+    }
+    .mail_vnos:required:valid + .label2{
+        margin-top: -4.7%;
+    }
+    .passwd_vnos1:required:valid + .label2{
+        margin-top: -4.7%;
+    }
+}
+@media screen and (max-width: 780px){
+    .label1{
+        margin-left: -200px;
+    }
+    .mail:focus + .label1{
+        margin-left: -210px;
+    }
+    .label2{
+        margin-top: -4.8%;
+    }
+    .mail_vnos:focus + .label2{
+        margin-top: -6%;
+    }
+    .passwd_vnos1:focus + .label2{
+        margin-top: -6%;
+    }
+    .mail:required:valid + .label1{
+        margin-left: -210px;
+    }
+    .mail_vnos:required:valid + .label2{
+        margin-top: -6%;
+    }
+    .passwd_vnos1:required:valid + .label2{
+        margin-top: -6%;
+    }
+}
+@media screen and (max-width: 690px) {
+    .label2{
+        margin-top: -5.8%;
+    }
+    .mail_vnos:focus + .label2{
+        margin-top: -7.5%;
+    }
+    .passwd_vnos1:focus + .label2{
+        margin-top: -7.5%;
+    }
+    .mail_vnos:required:valid +.label2{
+        margin-top: -7.5%;
+    }
+    .passwd_vnos1:required:valid + .label2{
+        margin-top: -7.5%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body, html{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .username{
+        height: 4%;
+        margin-bottom: 20px;
+    }
+    .passwd{
+        height: 4%;
+        margin-bottom: 20px;
+    }
+    
+    .glava{
+        margin-top: 10px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .label{
+        font-size: 10px;
+        width: 100%;
+        margin-top: -20px;
+    }
+    .username_vnos{
+        font-size: 12px;
+    }
+    .passwd_vnos{
+        font-size: 12px;
+    }
+    .username_vnos:focus + .label{
+        font-size: 8px;
+        margin-top: -5%;
+    }
+    .passwd_vnos:focus + .label{
+        font-size: 8px;
+        margin-top: -5%;
+    }
+    .label1{
+        margin-top: 2%;
+    }
+    .label2{
+        margin-top: -7.2%;
+    }
+    .mail_vnos:focus + .label2{
+        margin-top: -9.5%;
+    }
+    .passwd_vnos1:focus + .label2{
+        margin-top: -9.5%;
+    }
+    .username_vnos:required:valid + .label{
+        font-size: 8px;
+        margin-top: -5%;
+    }
+    .passwd_vnos:required:valid + .label{
+        font-size: 8px;
+        margin-top: -5%;
+    }
+    .mail_vnos:required:valid + .label2{
+        margin-top: -9.5%;
+    }
+    .passwd_vnos1:required:valid + .label2{
+        margin-top: -9.5%;
+    }
+}
+@media screen and (max-width: 400px){
+    .username_vnos:focus + .label{
+        margin-top: -7%;
+    }
+    .passwd_vnos:focus + .label{
+        margin-top: -7%;
+    }
+    .label2{
+        margin-top: -9%;
+    }
+    .mail_vnos:focus + .label2{
+        margin-top: -12%;
+    }
+    .passwd_vnos1:focus + .label2{
+        margin-top: -12%;
+    }
+    .username_vnos:required:valid + .label{
+        margin-top: -7%;
+    }
+    .passwd_vnos:required:valid + .label{
+        margin-top: -7%;
+    }
+    .mail_vnos:required:valid + .label2{
+        margin-top: -12%;
+    }
+    .passwd_vnos1:required:valid + .label2{
+        margin-top: -12%;
+    }
+}
+.sweet-alert{
+    height: 100% !important;
+}
